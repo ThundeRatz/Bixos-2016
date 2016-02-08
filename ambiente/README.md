@@ -28,6 +28,6 @@ Suas opções de instalação são:
 
 ## Instalação de pacotes
 
-Em distribuições Linux, dificilmente se realiza download de um programa manualmente para rodar um instalador. As distribuições possuem diferentes **gerenciadores de pacotes**, que são responsáveis por realizar o download e instalação de programas por você. Os programas são baixados de **repositórios**, que são sites da distribuição com programas que foram testados para funcionar sem problemas na sua distribuição e versão. Ou seja, você recebe um programa com maior segurança que ele vai funcionar e não fornece riscos a sua máquina.
+Em distribuições Linux, dificilmente se realiza download de um programa manualmente para rodar um instalador. As distribuições possuem diferentes **gerenciadores de pacotes**, que são responsáveis por realizar o download e instalação de programas por você. Os programas são baixados de **repositórios**, que são sites da distribuição com programas que foram testados para funcionar sem problemas na sua distribuição e versão. Ou seja, você recebe um programa com maior segurança que ele vai funcionar e não fornece riscos a sua máquina. Se algum programa faltar na sua máquina (durante os tutoriais aparecer um "command not found" para algo), pesquise como instalá-lo usando o gerenciador de pacotes.
 
 Mais sobre isso será visto na próxima aula.
