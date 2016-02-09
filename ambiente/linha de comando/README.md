@@ -133,3 +133,7 @@ int main() {
 Após compilar o programa com o nome read_input, podemos executar `ls | ./read_input` e ele mostrará cada arquivo com "Meu programa recebeu " antes.
 
 Isso é o básico para vocês, é importante que lembrem comandos de navegação e se sintam seguros usando um terminal.
+
+## Permissões
+
+Vários usuários e grupos podem coexistir em um sistema. Não vamos nos aprofundar em como eles funcionam, mas é importante saber que grupos podem definir permissões de acesso a recursos (você pode, por exemplo, adicionar alguns usuários confiáveis no grupo que pode usar uma impressora, e deixar visitantes de fora). Há um usuário e grupo muito especiais, chamados de root. A conta root possui acesso a todos os usuários e é usada para administração. Você verá, por exemplo, que não consegue instalar pacotes executando apenas o gerenciador de pacotes; você precisa preceder o comando por **sudo**. sudo é um comando que muda temporariamente para a conta root, executa o que lhe foi passado, e volta para seu usuário.
