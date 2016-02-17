@@ -107,7 +107,9 @@ se tivermos vários, é melhor o primeiro método, já que se mudarmos algo só 
 dos arquivos modificados. Já se tivermos realmente *muitos* arquivos, o melhor é utilizar um Makefile,
 como verão na aula de make!
 * Também existem [várias flags][gcc-flags] que podem ser colocadas no final dessa linha, como `-Wall`,
-que habilita vários warnings úteis
+que habilita vários warnings úteis. Para uso na guerra, sempre usem `-Wall -Wextra`, que ativam muitos
+warnings. Eles geralmente te avisam de qualquer erro facilmente identificável por passagem de tipos errados
+e expressões que podem ter efeitos indesejados.
 
 ##### Exemplo
 Para compilar o programa na pasta Exemplo:
