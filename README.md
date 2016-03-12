@@ -12,4 +12,4 @@ Olá bixos! Esse é o repositório com o que vocês precisarão aprender para es
 
 É importante que já vejam a parte dos tutorias de C logo. Apesar de alguns de vocês já terem C em MAC2166, algumas coisas que vocês ainda não viram serão necessárias.
 
-Mais detalhes sobre a segunda parte do PS serão dadas depois.
+Mais detalhes sobre a segunda parte do PS serão dados depois.
