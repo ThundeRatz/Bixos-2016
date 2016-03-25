@@ -10,9 +10,9 @@ HFUSE = 0xDF
 
 DBG=-g -gdwarf-2 -O0 -DSIMAVR_DEBUG
 OPTIMIZE=-Os -flto
-CFLAGS=-Wall -Wextra -mmcu=$(MCU) -DF_CPU=$(F_CPU) `pkg-config --cflags simavr`
+CFLAGS=-Wall -Wextra -mmcu=$(MCU) -DF_CPU=$(F_CPU)
 ifdef SIMAVR_DEBUG
-CFLAGS+=$(DBG)
+CFLAGS+=$(DBG) `pkg-config --cflags simavr-avr`
 else
 CFLAGS+=$(OPTIMIZE)
 endif
