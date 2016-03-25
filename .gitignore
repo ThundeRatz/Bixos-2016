@@ -7,3 +7,4 @@
 *.symvers
 *.exe
 *.out
+build/
