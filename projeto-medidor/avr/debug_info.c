@@ -27,6 +27,5 @@
 
 #include <avr_mcu_section.h>
 AVR_MCU(F_CPU, "atmega1280");
-AVR_MCU_SIMAVR_CONSOLE(&UDR0);
 
 #endif
