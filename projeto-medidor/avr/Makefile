@@ -18,7 +18,7 @@ CFLAGS+=$(OPTIMIZE)
 endif
 
 PREFIX=build/
-OUTPUT=$(PREFIX)potencia
+OUTPUT=$(PREFIX)transmissao_UART
 
 AVRDUDE=avrdude -c usbasp -p $(MCU)
 
