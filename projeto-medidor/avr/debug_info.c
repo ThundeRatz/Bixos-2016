@@ -26,6 +26,6 @@
 #include <avr/io.h>
 
 #include <avr_mcu_section.h>
-AVR_MCU(F_CPU, "atmega1280");
+AVR_MCU(F_CPU, "atmega8");
 
 #endif

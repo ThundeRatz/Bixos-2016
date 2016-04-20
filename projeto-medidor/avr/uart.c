@@ -29,21 +29,21 @@
 #include <util/setbaud.h>
 
 void uart_init() {
-	UBRR0H = UBRRH_VALUE;
-	UBRR0L = UBRRL_VALUE;
+	UBRRH = UBRRH_VALUE;
+	UBRRL = UBRRL_VALUE;
 
 #if USE_2X
-	UCSR0A |= (1 << U2X0);
+	UCSRA |= (1 << U2X);
 #else
-	UCSR0A &= ~(1 << U2X0);
+	UCSRA &= ~(1 << U2X);
 #endif
 
-	UCSR0C = (1 << UCSZ01) | (1 << UCSZ00); // 8N1
-	UCSR0B |= (1 << TXEN0); // Ativa transmissão
+	UCSRC = (1 << UCSZ1) | (1 << UCSZ0); // 8N1
+	UCSRB |= (1 << TXEN); // Ativa transmissão
 }
 
 int uart_putchar(char c) {
-	loop_until_bit_is_set(UCSR0A, UDRE0);
-	UDR0 = c;
+	loop_until_bit_is_set(UCSRA, UDRE);
+	UDR = c;
 	return 0;
 }

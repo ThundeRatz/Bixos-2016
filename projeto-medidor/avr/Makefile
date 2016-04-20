@@ -1,4 +1,4 @@
-MCU=atmega168
+MCU=atmega8
 F_CPU=16000000UL
 TARGET?=avr-
 CC=$(TARGET)gcc
