@@ -25,10 +25,11 @@
 
 #include <avr/io.h>
 
-#define BAUD 9600
+#define BAUD 38400
 #include <util/setbaud.h>
 
 void uart_init() {
+	// Ver documentação de util/setbaud.h para essas constantes
 	UBRRH = UBRRH_VALUE;
 	UBRRL = UBRRL_VALUE;
 
@@ -43,6 +44,7 @@ void uart_init() {
 }
 
 int uart_putchar(char c) {
+	// Espera acabar transmissão passada
 	loop_until_bit_is_set(UCSRA, UDRE);
 	UDR = c;
 	return 0;
