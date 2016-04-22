@@ -36,7 +36,7 @@ int main() {
 		uart_putchar('\r');
 		uart_putchar('\n');
 
-		_delay_ms(2000);
+		_delay_ms(1000);
 	}
 
 	cli();

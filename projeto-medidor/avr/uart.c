@@ -25,7 +25,7 @@
 
 #include <avr/io.h>
 
-#define BAUD 38400
+#define BAUD 9600
 #include <util/setbaud.h>
 
 void uart_init() {
@@ -39,8 +39,8 @@ void uart_init() {
 	UCSRA &= ~(1 << U2X);
 #endif
 
-	UCSRC = (1 << UCSZ1) | (1 << UCSZ0); // 8N1
 	UCSRB |= (1 << TXEN); // Ativa transmissão
+	UCSRC |= (1 << URSEL) | (1 << UCSZ1) | (1 << UCSZ0); // 8N1
 }
 
 int uart_putchar(char c) {

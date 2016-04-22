@@ -1,12 +1,12 @@
 MCU=atmega8
-F_CPU=16000000UL
+F_CPU=8000000UL
 TARGET?=avr-
 CC=$(TARGET)gcc
 SIZE=$(TARGET)size -C --mcu=$(MCU)
 OBJCOPY=$(TARGET)objcopy -O ihex -R .eeprom
 
-LFUSE = 0xF7
-HFUSE = 0xDF
+LFUSE = 0xE4
+HFUSE = 0xD9
 
 DBG=-g -gdwarf-2 -O0 -DSIMAVR_DEBUG
 OPTIMIZE=-Os -flto
